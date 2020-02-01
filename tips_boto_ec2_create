@@ -1,0 +1,38 @@
+//main tips
+  1. check the region consistency
+  2. check boto2 or boto3 and which python library associated with your boto2/3
+  3. not the complete guide, but just the general problems
+  
+
+//creating aws credentials 
+    aws configure
+    /*
+     *make sure the region is consistent with the console&code
+     *access_key & secret_key => user name & password
+     *   https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html
+     *also change the permission for the user, allow s3 access
+     */
+
+//create a security group from CLI
+    aws ec2 create-security-group --group-name my-sg --description "My security group"
+
+//a simplified guide 
+    https://blog.ipswitch.com/how-to-create-an-ec2-instance-with-python
+
+//ec2 instance attributes parse (boto2)
+    https://stackoverflow.com/questions/24547010/how-to-get-ip-address-of-the-launched-instance-with-boto
+
+//boto2 security groups creation
+    http://boto.cloudhackers.com/en/latest/security_groups.html
+
+//issue with boto2 keypair.save()
+    https://stackoverflow.com/questions/39652655/creating-ec2-instances-with-key-pairs-in-boto2
+    http://boto.cloudhackers.com/en/latest/ref/ec2.html#boto.ec2.keypair.KeyPair
+    https://www.quora.com/Why-is-TypeError-must-be-str-not-bytes-error
+    save doesn't work, we have to wirte a fp and save it ourselves (Type error)
+
+//ssh into the instance
+    ssh -i /path/my-key-pair.pem ec2-user@public_dns_name
+    
+
+
