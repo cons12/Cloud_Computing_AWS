@@ -1,7 +1,7 @@
 ##### **The Most Exciting Paper I read so far!!My Favorite Paper so far!!**
 ##### **Shout out to Sanjay Ghemawat, Howard Gobioff, and Shun-Tak Leung** 
 
-### Goals and multivations 
+### Goals and moltivation 
 1. Constant monitoring, error detection, fault tolerance, and automatic recovery must be integral to the system.
    * observations: component failures are the norm rather than the exception.
 2. Design assumptions and parameters such as I/O operation and block sizes have to be revisited.
